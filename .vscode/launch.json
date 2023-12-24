@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug @ Windows",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}\\rtthread.elf",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "miDebuggerServerAddress": "localhost:1234",
+            "serverLaunchTimeout": 2000,
+            "targetArchitecture": "ARM",
+            "setupCommands": [
+                {
+                    "text": "break main"
+                }
+            ],
+            "customLaunchSetupCommands": [],
+            "launchCompleteCommand": "exec-run",
+            "windows": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "arm-none-eabi-gdb.exe"
+            }
+        },
+    ]
+}

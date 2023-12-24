@@ -26,6 +26,10 @@ env = Environment(tools = ['mingw'],
 env.PrependENVPath('PATH', rtconfig.EXEC_PATH)
 env['ASCOM'] = env['ASPPCOM']
 
+env.Tool('compilation_db')
+cdb = env.CompilationDatabase(os.path.join(RTT_ROOT, '../compile_commands.json'))
+Alias('cdb', cdb)
+
 Export('RTT_ROOT')
 Export('rtconfig')
 

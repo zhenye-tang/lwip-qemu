@@ -1,0 +1,17 @@
+{
+    "C_Cpp.dimInactiveRegions": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/GPUCache" : true,
+        "**/build" : true,
+        "**/*.pyc" : true
+    },
+    "clangd.arguments": [
+        "--background-index",
+        "--compile-commands-dir=./",
+        "--clang-tidy",
+        "--clang-tidy-checks=performance-*,bugprone-*",
+        "--completion-style=detailed"
+        ],
+    "editor.renderWhitespace": "all"
+}
