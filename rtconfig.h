@@ -254,9 +254,6 @@
 #define RT_USING_ADT_REF
 #define RT_USING_KTIME
 
-/* RT-Thread Utestcases */
-
-
 /* RT-Thread online packages */
 
 /* IoT - internet of things */
